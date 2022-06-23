@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: gknsb-wiki
+  labels:
+    app: gwiki
+spec:
+  replicas: 4
+  selector: 
+    matchLabels:
+      app: mywiki
+  template:
+    metadata:
+      labels:
+        app:
+          mywiki
+    spec:
+      containers:
+      - name: mywiki
+        image: localhost:32000/mywiki:registry
+        imagePullPolicy: IfNotPresent
+        ports:
+        - containerPort: 80
