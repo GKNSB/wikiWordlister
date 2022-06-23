@@ -17,7 +17,7 @@ In order to get all the URLs you can just run
 ```
 python urlFetcher.py
 ```
-This will create a file `out-urls.txt` in the same directory.
+This will create a file `out-urls.txt` in the same directory. The script visits each url recursively until it has "seen" all urls at least once.
 
 ### Getting all words
 To get all words from the aforementioned urls, simple run

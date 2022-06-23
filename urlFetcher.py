@@ -38,7 +38,7 @@ def getPage(url):
 def main():
 	sites = []
 	urlList = []
-	url = "http://172.17.0.2/wikipedia_el_all_maxi_2022-05/A/%CE%A0%CF%8D%CE%BB%CE%B7:%CE%9A%CF%8D%CF%81%CE%B9%CE%B1"
+	url = "http://172.17.0.2/wikipedia_el_all_maxi_2022-05/A/Πύλη:Κύρια"
 	
 	sites.append(url)
 
